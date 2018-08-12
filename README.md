@@ -1,2 +1,4 @@
 # opencv_car_detection_demo
 a cascade classifier demo with problems about car detection 
+I have succeeded creating pos.vec which can work rightly , then I set numStages 20 , however when training went to step
+8 , it turned out an error which is "Train dataset for temp stage can not be filled. Branch training terminated" .I google a lot but found nothing useful . Many people said the path of neg.data is wrong which can cause such error . However ,if the path was wrong when the training began ,why could it go to the 9th step ? Other people suggested I did not collect enough samples , so I enriched my samples library to 1141 positive samples and 3300+ negative samples . It still did not work. Occationally I changed the numbers of numPos and numNeg  which should be at the ratio of 1:3 , it worked ！ But it just moved to next step . Maybe there are some important and indirect relationships between them , I can not figure it out .
